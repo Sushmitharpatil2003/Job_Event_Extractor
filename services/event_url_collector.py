@@ -21,7 +21,8 @@ class EventURLCollector:
         }
         search = GoogleSearch(params)
         results = search.get_dict()
-        return [item['link'] for item in results.get('organic_results', [])]
+        return [item['link'] for item in results.get
+                ('organic_results', [])]
 
     def extract_text_from_url(self, url):
         try:
